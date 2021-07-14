@@ -1,0 +1,14 @@
+body{
+    margin:0px;
+}
+
+img  {
+    float: left;
+    width: 30%;
+}
+
+.mb-0 {
+    float: right;
+    width: 70%
+    }
+
