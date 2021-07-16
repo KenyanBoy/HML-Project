@@ -6,6 +6,10 @@ img  {
     float: left;
 }
 
+.text {
+    padding-left: 50px;
+}
+
 #teams {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -23,3 +27,8 @@ img  {
     color: black;
 }
 
+/* .table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: rgb(191, 200, 214); 
+}
+ */
