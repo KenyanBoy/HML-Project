@@ -18,7 +18,7 @@ img  {
     width: 95%;
 }
 
-#teams tr:hover {background-color: rgb(221, 221, 221);}
+#teams tr:hover {background-color: primary;}
 
 #teams th {
     padding-top: 12px;
@@ -27,8 +27,20 @@ img  {
     color: black;
 }
 
+.carousel-item{
+    height: 500px;
+}
+
+.d-block {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
 /* .table-striped>tbody>tr:nth-child(odd)>td, 
 .table-striped>tbody>tr:nth-child(odd)>th {
    background-color: rgb(191, 200, 214); 
 }
- */
+
