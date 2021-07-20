@@ -43,6 +43,33 @@ d3.csv("Resources/Footballteams.csv").then(function(data) {
         name: "Yellow Cards",
         marker:{
             color: "#D4AF37"},
+        // transforms: [
+        //     {
+        //         type:'groupby',
+        //         groups: teams
+        //     }
+        // ],
+        // updatemenus: [{
+        //     type: 'buttons',
+        //     buttons: [{
+        //       label: 'no filter',
+        //       method: 'restyle',
+        //       args: ['transforms[0]', [{
+        //         type: 'filter',
+        //         enabled: false,
+        //       }], [2]]
+        //     }, {  
+        //       label: 'filter',
+        //       method: 'restyle',
+        //       args: ['transforms[0]', [{
+        //         type: 'filter',
+        //         enabled: true,
+        //         target: 'y',
+        //         operation: '>',
+        //         value: '1'
+        //       }], [2]]
+        //     }]
+        //   }]
         type: "bar",
     };
 
@@ -100,6 +127,7 @@ d3.csv("Resources/Footballteams.csv").then(function(data) {
         title: "Team Statistics",
         xaxis: {title: "Teams (by Country)"},
         yaxis: {title: "Statistics"},
+        barmode: 'stack',
         margin: {
           l: 100,
           r: 100,
