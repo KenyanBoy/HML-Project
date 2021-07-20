@@ -42,7 +42,34 @@ d3.csv("Resources/Footballteams.csv").then(function(data) {
         y: yellow_cards,
         name: "Yellow Cards",
         marker:{
-            color: "yellow"},
+            color: "#D4AF37"},
+        // transforms: [
+        //     {
+        //         type:'groupby',
+        //         groups: teams
+        //     }
+        // ],
+        // updatemenus: [{
+        //     type: 'buttons',
+        //     buttons: [{
+        //       label: 'no filter',
+        //       method: 'restyle',
+        //       args: ['transforms[0]', [{
+        //         type: 'filter',
+        //         enabled: false,
+        //       }], [2]]
+        //     }, {  
+        //       label: 'filter',
+        //       method: 'restyle',
+        //       args: ['transforms[0]', [{
+        //         type: 'filter',
+        //         enabled: true,
+        //         target: 'y',
+        //         operation: '>',
+        //         value: '1'
+        //       }], [2]]
+        //     }]
+        //   }]
         type: "bar",
     };
 
@@ -54,16 +81,53 @@ d3.csv("Resources/Footballteams.csv").then(function(data) {
             color: "red"},
         type: "bar",
     };
+
+    var PossesionTrace = {
+        x: teams,
+        y: possesions,
+        name: "Possesions",
+        marker:{
+            color: "blue"},
+        type: "bar",
+    };
+
+    var PassTrace = {
+        x: teams,
+        y: pass,
+        name: "Pass",
+        marker:{
+            color: "brown"},
+        type: "bar",
+    };
+
+    var AreailWinsTrace = {
+        x: teams,
+        y: aerials_won,
+        name: "Areal Wins",
+        marker:{
+            color: "#8feb34"},
+        type: "bar",
+    };
+
+    var RatingsTrace = {
+        x: teams,
+        y: rating,
+        name: "Ratings",
+        marker:{
+            color: "#8c34eb"},
+        type: "bar",
+    };
   
   
       // data
-      var barData = [GoalTrace, YellowTrace, RedTrace];
+      var barData = [GoalTrace, YellowTrace, RedTrace, PossesionTrace, PassTrace, AreailWinsTrace, RatingsTrace];
   
       // Apply the group bar mode to the layout
       var barLayout = {
         title: "Team Statistics",
         xaxis: {title: "Teams (by Country)"},
         yaxis: {title: "Statistics"},
+        barmode: 'stack',
         margin: {
           l: 100,
           r: 100,
