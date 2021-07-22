@@ -8,35 +8,38 @@ This Project aims to Utilise EPL Player stats to build an EPL Dream team. By gat
 
 ## Assignment structure
 ```
-ETL-Project
+Huroku-Project
 | 
 |__ images/          
-|   |__ epl_dreamteam_cover
-|   |__ ERDModel.png
-|   |__ ETL.PNG
-|   |__ ETL_NewParadigm.PNG
+|   |__ 20-21_table.png![20-21_table](https://user-images.githubusercontent.com/80458900/126598712-e23c850f-c443-4881-9c93-f46ea2f63ed2.png)
+|   |__ ChampionsLeague.PNG
+|   |__ Chelswa_img1.jpg
+|   |__ Manchester_City_img4.jpg
+    |__ nav_bar_img.png
+    |__ Paris_Saint_Germain_img3.jpg
+    |__ Real_Madrid_img2.jpg
+    |__ UEFA_clubs.PNG
 |
 |__ Resources/
-|   |__ OriginalData/
-|      |__ pl_15-16.csv
-|      |__ pl_16-17.csv
-|      |__ pl_17-18.csv
-|      |__ pl_18-19.csv
-|   |__ defender_average.csv
-|   |__ forward_average.csv
-|   |__ goalkeeper_average.csv
-|   |__ midfielder_average.csv
-|   |__ Player_complete_nationality.csv
-|   |__ Player_Stats.csv
-|   |__ player_stats_complete.csv
+|   |__ Team Data/
+|      |__ chelsea_players.csv
+|      |__ Footballteams.csv
+|      |__ laliga_foreign_player_mminutes.csv
+|      |__ manchester_play.csv
+|   |__ premierleague_forign_player_minutes.csv
+|   |__ psg_players.csv
+|   |__ real_madrid_players.csv
+|   |__ soccer_player_webscraping.ipynbv
+|   |__ world_country_latitude_and_longitude_values.csv
+|   
+|   
 |
 |__ SQL/
-|   |__ epl_table_schema.sql
+|   |__ SQlite databse creation
 |
 |__ .gitignore 
-|__ EPL_csv_cleanup.ipynb
-|__ EPL_html_GetRequest.ipynb
-|__ Project Report - Group 7.docx
+|__ .ipynb
+|__ Teams.ipynb
 |__ README - Project Guidelines.md
 |__ README - Project Proposal.md
 |__ README.md
@@ -50,11 +53,11 @@ ETL-Project
 # Dependencies and Setup
 
 from bs4 import BeautifulSoup
-from sqlalchemy import create_engine
-
-import pandas as pd
-import numpy as np
 import requests
+import pandas as pd
+import json
+from sqlalchemy import create_engine
+from geojson import Feature, FeatureCollection, Point
 
 ```
 
@@ -63,8 +66,9 @@ import requests
 
 |No|Source|Link|
 |-|-|-|
-|1|Kaggle|https://www.kaggle.com/krishanthbarkav/english-premier-leagueepl-player-statistics|
-|2|Scrape/API|https://fbref.com/en/comps/9/stats/Premier-League-Stats|
+|1|Kaggle|https://www.kaggle.com/varpit94/football-teams-rankings-stats|
+|2|Kaggle|https://www.transfermarkt.co.uk/manchester-city/kader/verein/281/saison_id/2021|
+|3|Kaggle|https://www.kaggle.com/rajatrc1705/english-premier-league202021|
 
 
 ## Datasets 
@@ -84,29 +88,27 @@ import requests
 |11|player_stats_complete.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/player_stats_complete.csv|
 
 
-## ETL Task Breakdown:
+## Project Task Breakdown:
 
-![ETL.PNG](images/ETL.PNG)
+![Javascript.PNG](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amcharts.com%2Fjavascript-maps%2F&psig=AOvVaw10IaYzBheyVDS-81Tbft4a&ust=1627023138649000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJj5-9-L9vECFQAAAAAdAAAAABAD)
 
 1. Research
 2. Acquire datasets
 3. Clean datasets
     1. Jupyter notebook
+    2. Create GeoJSON files
 4. Create database SQL
-    1. Create tables
-    2. Create a view to join tables
+    1. load dataframes
+    2. upload them on app.js ustilising the Flask library
 
 
-## Entity Relationship Model:
 
-![RDModel.png](images/https://github.com/alysnow/ETL-Project/blob/main/images/ERDModel.png)
+## Proposal
 
-The ERD model was generated using the QuickDBD tool in the following link; http://www.quickdatabasediagrams.com
-
-## Report
-
-A copy of the Project report is located in the following link; https://github.com/alysnow/ETL-Project/blob/main/Project%20Report%20-%20Group%207.docx
+A copy of the Project proposal is located in the following link: []
 
 ## Contributors
-- [@Alysha](https://github.com/alysnow)
+- [@Sri](https://github.com/srivegunta)
 - [@Ernest](https://github.com/KenyanBoy)
+- [@Alvin](https://github.com/Alvin1359)
+- [@Petra](https://github.com/PetraMoyle)
