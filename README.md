@@ -75,19 +75,20 @@ from geojson import Feature, FeatureCollection, Point
 
 |No|Source|Link|
 |-|-|-|
-|1|chelsea_players|LINK|
-|2|Footballteams.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_16-17.csv|
-|3|laliga_foreign_player_mminutes.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_17-18.csv|
+|1|Team_Data.geojson|https://github.com/KenyanBoy/HML-Project/blob/main/Resources/Team_Data.geojson|
+|2|Footballteams.csv|LINK|
+|3|laliga_foreign_player_mminutes.csv|LINK|
 |4|manchester_play.csv|LINK|
 |5|premierleague_forign_player_minutes.csv|LINK|
 |6|psg_players.csv|LINK|
 |7|real_madrid_players.csv|LINK|
 |8|world_country_latitude_and_longitude_values.csv|LINK|
+|9|chelsea_players.csv|LINK|
 
 
 ## Project Task Breakdown:
 
-![Javascript.PNG](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amcharts.com%2Fjavascript-maps%2F&psig=AOvVaw10IaYzBheyVDS-81Tbft4a&ust=1627023138649000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJj5-9-L9vECFQAAAAAdAAAAABAD)
+![Javascript.PNG](https://www.amcharts.com/wp-content/uploads/2018/11/amcharts_share.jpg)
 
 1. Research
 2. Acquire datasets
