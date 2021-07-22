@@ -8,7 +8,7 @@ This Project aims to Utilise EPL Player stats to build an EPL Dream team. By gat
 
 ## Assignment structure
 ```
-Huroku-Project
+Heroku-Project
 | 
 |__ images/          
 |   |__ 20-21_table.png![20-21_table](https://user-images.githubusercontent.com/80458900/126598712-e23c850f-c443-4881-9c93-f46ea2f63ed2.png)
@@ -75,17 +75,14 @@ from geojson import Feature, FeatureCollection, Point
 
 |No|Source|Link|
 |-|-|-|
-|1|pl_15-16.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_15-16.csv|
-|2|pl_16-17.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_16-17.csv|
-|3|pl_17-18.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_17-18.csv|
-|4|pl_18-19.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_18-19.csv|
-|5|Player_Stats.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/Player_Stats.csv|
-|6|Player_complete_nationality.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/Player_complete_nationality.csv|
-|7|defender_average.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/defender_average.csv|
-|8|forward_average.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/forward_average.csv|
-|9|goalkeeper_average.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/goalkeeper_average.csv|
-|10|midfielder_average.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/midfielder_average.csv|
-|11|player_stats_complete.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/player_stats_complete.csv|
+|1|chelsea_players|LINK|
+|2|Footballteams.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_16-17.csv|
+|3|laliga_foreign_player_mminutes.csv|https://github.com/alysnow/ETL-Project/blob/main/Resources/OriginalData/pl_17-18.csv|
+|4|manchester_play.csv|LINK|
+|5|premierleague_forign_player_minutes.csv|LINK|
+|6|psg_players.csv|LINK|
+|7|real_madrid_players.csv|LINK|
+|8|world_country_latitude_and_longitude_values.csv|LINK|
 
 
 ## Project Task Breakdown:
